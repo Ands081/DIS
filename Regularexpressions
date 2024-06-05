@@ -1,4 +1,4 @@
 regular expressions
 to match restaurants that does not end with "istan" use "^(?!.*istan$).+"
-to match restaurants that do end with "istan" use ".*istan$"
+to match restaurants that does end with "istan" use ".*istan$"
 
