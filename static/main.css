@@ -35,7 +35,7 @@
   }
   
   li a:hover:not(.active) {
-    color: #ea00d9;
+    color: #ffffff;
   }
   
   body {
@@ -64,12 +64,12 @@
   }
   p {
     font-size: 1.2em;
-    color: #ea00d9;
+    color: #ea0000;
   }
   
   h1 {
     font-size: 2.5em;
-    color: #ea00d9;
+    color: #ff0000;
     text-align: center;
   }
   h2 {
@@ -85,9 +85,15 @@
       text-align: center;
       color: #000000;
   }
-  p.card-text {
-      font-size: 0.6em;
-      color: #0abdc6;
+  .card-text1 {
+      font-size: 1.2em;
+      color: #000000;
+  }
+  
+  .card-text2 {
+    font-size: 0.8em;
+    color: #000000;
+    line-height: 0.8;
   }
   
   .contact {
@@ -126,12 +132,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    grid-gap: 4rem;
+    grid-gap: 1rem;
     padding-top: 1rem;
   }
   .tableitem {
     border: 4px solid #fcec0c;
     padding: 1rem;
+    background-color: #ffffff;
   }
   .image {
     height: 300px;
@@ -173,7 +180,7 @@
   .container {
     background-color: #ffffff;
     padding: 2px 16px;
-    height: 146px;
+    height: 144px;
   }
 
   .lol {
@@ -184,12 +191,12 @@
     height: 100px;
   }
   thead {
-    font-size: 1em;
-    color: #0abdc6;
+  font-size: 1em;
+  color: #ff0000;
   }
 
   tbody {
   font-size: 1em;
-  color: #0abdc6;
+  color: #ffffff;
   }
   

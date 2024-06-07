@@ -1,5 +1,6 @@
 {% extends "navbar.html" %} {% block content %}
-<h1>Haps haps kom og få en kababs</h1>
+
+<h1>Haps haps kom og få en kabab</h1>
 
 <div class="cards">
   {%for i in range(0,length)%}
@@ -12,9 +13,10 @@
       />
       <div class="container">
         <h4><b>{{content[i][1]}}</b></h4>
-        <p class="card-text">Adresse: {{content[i][2]}}</p>
-        <p class="card-text">Tlf Nr.: {{content[i][4]}}</p>
-        <p class="card-text">Rating: {{content[i][3]}}</p>
+        <p class="card-text2">Adresse: <br> {{content[i][2]}}</p>
+        <p class="card-text2">Rating: {{content[i][3]}}</p>
+        <p class="card-text2">Tlf Nr.: {{content[i][4]}}</p>
+
       </div>
     </div>
   </a>

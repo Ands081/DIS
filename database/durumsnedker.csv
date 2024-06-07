@@ -1,13 +1,13 @@
-id,name,address,rating,x_coordinate,y_coordinate
+﻿id,name,address,rating,x coordinate,y coordinate
 1,Duniyas Shish Kebab,"Sifs Pl. 9 - 13, 2100 København",3.3,55.70311,12.55796
 2,Kebab bar,"Jagtvej 89, 2200 København",4.1,55.69536,12.54969
-3,Afandi Kebab,"Jagtvej 139, 2200 København",4.0,55.69855,12.55334
+3,Afandi Kebab,"Jagtvej 139, 2200 København",4,55.69855,12.55334
 4,Safir Kebab,"Jagtvej 23, 2200 København",3.9,55.69053,12.54425
-5,Dilan's - Pizzaria & Café ,"Jagtvej 92, 2200 København",4.2,55.69751,12.55271
+5,Dilan's - Pizzaria & Café,"Jagtvej 92, 2200 København",4.2,55.69751,12.55271
 6,"Istanbul Kebab
 ","Tagensvej 100, st. tv, 2200 København",4.2,55.70359,12.54825
-7,Flamingo,"Nørrebrogade 221, 2200 København",4.0,55.69961,12.54086
+7,Flamingo,"Nørrebrogade 221, 2200 København",4,55.69961,12.54086
 8,Fuldkorn Kebab & Pizza,"Nørrebrogade 158, 2200 København",4.1,55.69548,12.54735
 9,"Divan
-","Nørrebrogade 245, 2200 København",4.2,55.70050,12.53920
+","Nørrebrogade 245, 2200 København",4.2,55.7005,12.5392
 10,Dûrûm Symfoni,"Nørrebrogade 104, 2200 København",4.4,55.69318,12.55099

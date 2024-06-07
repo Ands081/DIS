@@ -9,6 +9,5 @@ y_coordinate float(7));
 copy  kebabshop(id, name, address, rating, x_coordinate, y_coordinate)
             from 'C:\Users\Peter\Desktop\Durum\src\database\durumsnedker.csv'
             delimiter ','
-            CSV HEADER;
-
-
+            CSV HEADER
+            ENCODING 'UTF8';
