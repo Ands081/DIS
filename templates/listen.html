@@ -12,16 +12,12 @@
     </thead>
      <tbody>
     {% for n in content %}
-    <a href="/{{content[n][0]}}">
-        <div class="container">
-            <tr>
-            <td scope="row">{{n[0]}}</td>
-            <td>{{n[1]}}</td>
-            <td>{{n[2]}}</td>
-            <td>{{n[3]}}</td>
-            </tr>
-        </div>
-    </a>
+    <tr>
+    <td scope="row">{{n[0]}}</td>
+    <td><a href="/{{n[0]}}">{{n[1]}}</a></td>
+    <td>{{n[2]}}</td>
+    <td>{{n[3]}}</td>
+    </tr>
     {% endfor %}
      </tbody>
    </table>
