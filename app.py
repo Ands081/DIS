@@ -14,7 +14,7 @@ app = Flask(__name__)
 db = "dbname='kebab' user='postgres' host='localhost' password = '123'"
 conn = psycopg2.connect(db)
 
-@app.route('/')
+@app.route('/', methods=["POST", "GET"])
 def home():
     cur = conn.cursor()
     #Getting 10 random rows from Attributes
