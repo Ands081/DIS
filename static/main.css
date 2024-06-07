@@ -28,7 +28,7 @@
   
   li a {
     display: block;
-    color: #0abdc6;
+    color: #ff0000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -39,74 +39,14 @@
   }
   
   body {
-    background: #133e7c;
+    background: #000000;
     margin-top: 10px;
     margin-left: 100px;
     margin-right: 100px;
     font-family: 'Press Start 2P', sans-serif;
   }
-  label {
-    font-size: 18px;
-    color: #ea00d9;
-  }
-  #form {
-    width: 400px;
-    font-family: 'Press Start 2P', sans-serif;
-    padding: 10px;
-    font-size: 18px;
-    outline:none;
-    background: linear-gradient(to left top, #000, #133e7c) fixed;
-    border: 4px solid #ea00d9;
-    color: rgba(255,255,255,0.8);
-    margin: 5px;
-    transition: all 0.5s;
-  }
-  #formNumber {
-  width: 100px;
-    font-family: 'Press Start 2P', sans-serif;
-    padding: 10px;
-    font-size: 18px;
-    outline:none;
-    background: linear-gradient(to left top, #000, #133e7c) fixed;
-    border: 4px solid #ea00d9;
-    color: rgba(255,255,255,0.8);
-    margin: 5px;
-    transition: all 0.5s;
-  }
+
   
-  #form:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border: 4px solid #fcec0c;
-  }
-  #form:focus {
-    border: 4px solid #fcec0c;
-  }
-  
-  #button {
-    width: 125px;
-    font-family: 'Press Start 2P', sans-serif;
-    padding: 11px;
-    font-size: 15px;
-    font-weight:bold;
-    margin: 5px;
-    outline:none;
-    background: linear-gradient(to left top, #000, #133e7c) fixed;
-    border: 4px solid #ea00d9;
-    color: rgba(255,255,255,0.8);
-  }
-  #buttonAdd {
-    width: 250px;
-    height: 125px;
-    font-family: 'Press Start 2P', sans-serif;
-    padding: 11px;
-    font-size: 15px;
-    font-weight:bold;
-    margin: 5px;
-    outline:none;
-    background: linear-gradient(to left top, #000, #133e7c) fixed;
-    border: 6px solid #ea00d9;
-    color: rgba(255,255,255,0.8);
-  }
   #buttonAdd:hover {
     border: 4px solid #fcec0c;
   }
@@ -143,7 +83,7 @@
   }
   h4 {
       text-align: center;
-      color: #ea00d9;
+      color: #000000;
   }
   p.card-text {
       font-size: 0.6em;
@@ -179,7 +119,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #091833;
+    background-color: #ffffff;
   }
   
   .tablecontainer {
@@ -216,7 +156,7 @@
   
   .card {
     /* Add shadows to create the "card" effect */
-    border: 4px solid #ea00d9;
+    border: 4px solid #ffee00;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 300px;
@@ -231,7 +171,7 @@
   
   /* Add some padding inside the card container */
   .container {
-    background-color: #091833;
+    background-color: #ffffff;
     padding: 2px 16px;
     height: 146px;
   }
