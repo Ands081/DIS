@@ -8,8 +8,9 @@ For windows do
 
 Set password in __init__.py
 
-run schema.sql
-    psql -d kebab -U postgres -W -f loaddb.sql
+run loaddb.sql
+    psql -d kebab -U postgres -W -f src/loaddb.sql
+    psql -d kebab -U postgres -W -f src/loadreviews.sql
 
 Run Web-App
     python src/app.py

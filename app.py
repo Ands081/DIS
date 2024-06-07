@@ -19,13 +19,13 @@ cursor = conn.cursor()
 def home():
     cur = conn.cursor()
     #Getting 10 random rows from Attributes
-    tenrand = '''select * from Attributes order by random() limit 10;'''
+    tenrand = '''select * from kebabshop order by random() limit 10;'''
     cur.execute(tenrand)
     punks = list(cur.fetchall())
     length = len(punks)
 
     #Getting random id from table Attributes 
-    randint = '''select id from Attributes order by random() limit 1;'''
+    randint = '''select id from kebabshop order by random() limit 1;'''
     cur.execute(randint)
     randomNumber = cur.fetchone()[0]
     if request.method == "POST":
@@ -53,7 +53,7 @@ def contact():
 @app.route("/listen")
 def listen():
     cur = conn.cursor()
-    tenrand = '''select * from Attributes'''
+    tenrand = '''select * from kebabshop'''
     cur.execute(tenrand)
     punks = list(cur.fetchall())
     return render_template("listen.html", content=punks)
