@@ -46,6 +46,29 @@ def home():
     length = len(punks)
     return render_template("index.html", content=punks, length=length, randomNumber = randomNumber)
 
+@app.route("/kontakt")
+def contact():
+    return render_template("kontakt.html")
+
+@app.route("/listen")
+def listen():
+    cur = conn.cursor()
+    tenrand = '''select * from Attributes'''
+    cur.execute(tenrand)
+    punks = list(cur.fetchall())
+    return render_template("listen.html", content=punks)
+
+@app.route("/<punkid>", methods=["POST", "GET"])
+def punkpage(punkid):
+    cur = conn.cursor()
+    sql1 = f''' select * from attributes where id = '{punkid}' '''
+
+    cur.execute(sql1)
+
+    ct = cur.fetchone()
+
+    return render_template("cryptopunk.html", content=ct)
+
 if __name__ == '__main__':
     app.run(debug=True)
 

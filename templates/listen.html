@@ -1,0 +1,31 @@
+{% extends "navbar.html" %}
+{% block content %}
+
+<table class="sortable table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Navn</th>
+        <th>Adresse</th>
+        <th>Rating</th>
+     </tr>
+    </thead>
+     <tbody>
+    {% for n in content %}
+    <a href="/{{content[n][0]}}">
+        <div class="container">
+            <tr>
+            <td scope="row">{{n[0]}}</td>
+            <td>{{n[1]}}</td>
+            <td>{{n[2]}}</td>
+            <td>{{n[3]}}</td>
+            </tr>
+        </div>
+    </a>
+    {% endfor %}
+     </tbody>
+   </table>
+
+
+   
+{% endblock content %}
