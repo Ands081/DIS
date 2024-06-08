@@ -1,13 +1,53 @@
-﻿id,name,address,rating,x coordinate,y coordinate
-1,Duniyas Shish Kebab,"Sifs Pl. 9 - 13, 2100 København",3.3,55.70311,12.55796
-2,Kebab bar,"Jagtvej 89, 2200 København",4.1,55.69536,12.54969
-3,Afandi Kebab,"Jagtvej 139, 2200 København",4,55.69855,12.55334
-4,Safir Kebab,"Jagtvej 23, 2200 København",3.9,55.69053,12.54425
-5,Dilan's - Pizzaria & Café,"Jagtvej 92, 2200 København",4.2,55.69751,12.55271
+id,name,address,rating,x coordinate,y coordinate,tlfnr
+1,Duniyas Shish Kebab,"Sifs Pl. 9 - 13, 2100 København",3.3,55.70311,12.55796,35821200
+2,Kebab bar,"Jagtvej 89, 2200 København",4.1,55.69536,12.54969,35810001
+3,Afandi Kebab,"Jagtvej 139, 2200 København",4.0,55.69855,12.55334,32103040
+4,Safir Kebab,"Jagtvej 23, 2200 København",3.9,55.69053,12.54425,35343470
+5,Dilan's - Pizzaria & Café ,"Jagtvej 92, 2200 København",4.2,55.69751,12.55271,35371909
 6,"Istanbul Kebab
-","Tagensvej 100, st. tv, 2200 København",4.2,55.70359,12.54825
-7,Flamingo,"Nørrebrogade 221, 2200 København",4,55.69961,12.54086
-8,Fuldkorn Kebab & Pizza,"Nørrebrogade 158, 2200 København",4.1,55.69548,12.54735
+","Tagensvej 100, st. tv, 2200 København",4.2,55.70359,12.54825,
+7,Flamingo,"Nørrebrogade 221, 2200 København",4.0,55.69961,12.54086,35821600
+8,Fuldkorn Kebab & Pizza,"Nørrebrogade 158, 2200 København",4.1,55.69548,12.54735,35352000
 9,"Divan
-","Nørrebrogade 245, 2200 København",4.2,55.7005,12.5392
-10,Dûrûm Symfoni,"Nørrebrogade 104, 2200 København",4.4,55.69318,12.55099
+","Nørrebrogade 245, 2200 København",4.2,55.70050,12.53920,35813804
+10,Dürüm Symfoni,"Nørrebrogade 104, 2200 København",4.4,55.69318,12.55099,61102337
+11,Durum Bar Øst,"Østerbrogade 90, 2100 København",4.0,55.70111,12.57767,34112951
+12,East Kebab,"Østerbrogade 25, 2100 København",4.7,55.69887,12.57812,35383806
+13,Alanya Kebab,"Ægirsgade 73, 2200 København",4.1,55.70178,12.55018,35836821
+14,Zam Zam,"Frederikssundsvej 20, 2400 København",3.8,55.70166,12.53506,35811848
+15,Killer Kebab,"Borgergade 18, 1300 København",4.6,55.68386,12.58551,22449002
+16,Kebabistan 3,"Nordre Frihavnsgade 63, 2100 København",4.3,55.70341,12.58510,35428993
+17,Kebaben,"Gothersgade 32, 1123 København",3.7,55.68218,12.58289,33153357
+18,Berlin Döner Kebab - Nørrebro,"Nørrebrogade 100, 2200 København",4.0,55.69299,12.55125,
+19,Durum Bar,"Nørregade 53, 1165 København",4.0,55.68226,12.57082,34103344
+20,Kebabery,"Gothersgade 17, 1123 København K",4.6,55.68172,12.58383,40501138
+21,Falafel House,"Købmagergade 23, 1150 København",3.5,55.68014,12.57873,33150439
+22,Doner Kebab,"Gammeltorv 2, 1457 København",4.3,55.67819,12.57292,
+23,Vefa Kebab,"Nordre Frihavnsgade 54, 2100 København Ø",4.5,55.70257,12.58294,
+24,Grill House,"Hillerødgade 4, 2200 København",3.9,55.69789,12.54278,
+25,Kebab & Pizza Grill,"Østerbrogade 158, 2100 København",2.8,55.70983,12.57799,
+26,Shawarma Grillhus,"Frederiksberggade 36, 1459 København",3.8,55.67677,12.56986,33126323
+27,Strøg Shawarma,"Frederiksberggade 5, 1459 København",3.8,55.67754,12.57182,33137284
+28,Shawarma Kebap Palace,"Frederiksberggade 30, 1459 København",2.5,55.67691,12.57014,33131372
+29,Blågårdskebab,"Blågårdsgade 31, 2200 København",4.4,55.68599,12.55745,35391113
+30,Öz Konya Kebab,"Frederikssundsvej 14A, 2400 København",3.9,55.70169,12.53586,39622722
+31,Divane Kebab House,"Torvegade 62, 1400 København K",4.0,55.67133,12.59320,32570640
+32,Durum Bar,"Østerbrogade 163, 2100 København",4.2,55.71536,12.57722,32171155
+33,Pizza og Shawarma House,"Frederiksborgvej 4, 2400 København",4.4,55.70209,12.43381,35810035
+34,Kösk Kebab,"Frederikssundsvej 23, 2400 København",4.2,55.70179,12.53448,38113405
+35,King of Kebab Pizza & Grill,"Nørrebrogade 20, 2200 København",3.9,55.68818,12.56024,35249282
+36,Durum House,"Nørrebrogade 31, 2200 København",3.7,55.68838,12.55900,35371711
+37,Beyti,"Nørrebrogade 13, 2200 København",3.9,55.68797,12.56018,32170003
+38,Torvets Kebab,"Sankt Hans Torv 24, 2200 København",4.3,55.69046,12.56102,
+39,Gaza Grill,"Fælledvej 22C, 2200 København",4.4,55.69034,12.56091,33330780
+40,Fresh Kebab,"Frederikssundsvej 15, D, 2400 København",5.0,55.70146,12.53499,50241831
+41,Sultan,"Nørrebrogade 72A, 2200 København",4.2,55.69131,12.55366,35367512
+42,Falafel Factory,"Nørrebrogade 63, 2200 København",4.6,55.69035,12.55466,52406363
+43,Sheik Shawarma ,"Nørrebrogade 100, 2200 København",4.0,55.69351,12.55205,50143237
+44,Kebabbro,"Folmer Bendtsens Pl. 6, 2200 København",4.7,55.70044,12.53829,71395587
+45,Tunam Kebab,"Kapelvej 51, 2200 København",5.0,55.68577,12.55103,50275001
+46,Killer Kebab - Nørrebro,"Rantzausgade 17, 2200 København",4.1,55.68590,12.55114,
+47,Orion Pizza & Grillbar,"Nordre Frihavnsgade 17, 2100 København",4.5,55.70192,12.57945,35421933
+48,Kösem,"Nørrebrogade 186, 2200 København",3.9,55.69820,12.54449,35353532
+49,Falafelkælderen,"Rantzausgade 14, 2200 København",4.4,55.68590,12.55164,35369999
+50,hellerup kebab,"Strandparksvej 1, 2900 Hellerup",4.0,55.73335,12.57628,22900166
