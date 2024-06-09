@@ -1,15 +1,6 @@
-from flask import Flask, render_template, redirect, url_for, session, abort, request, flash
-from math import sin, cos, sqrt, atan2, radians
+from flask import Flask, render_template, request
 import geopy.distance
-import requests
-from bs4 import BeautifulSoup
 import psycopg2
-from flask_bcrypt import Bcrypt
-from flask_login import LoginManager
-import os
-import glob
-import pandas as pd
-import random
 import re
 
 app = Flask(__name__)

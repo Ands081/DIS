@@ -1,43 +1,33 @@
 {% extends "navbar.html" %} {% block content %}
 <!DOCTYPE html>
-<h1>Haps haps kom og få en kabab</h1>
+<h1>Ten random Kebabshops</h1>
 
 <form action="/" method="POST">
-	<div class="login">
-		<div class="login-screen">
-			<div class="app-title">
-			</div>
-			<div class="login-form">
-				<div class="control-group">
-					<input
-						type="text"
-						class="login-field"
-						value=""
+	<div class="control-group">
+		<input
+			type="text"
+			value=""
             pattern="\d*\.\d*"
-						placeholder="Latitude"
-						name="latitude"
-					/>
-					<label class="login-field-icon fui-user" for="login-name"></label>
-				</div>
-				<div class="control-group">
-					<input
+			placeholder="Latitude"
+			name="latitude"
+			required
+		/>
+	</div>
+	<div class="control-group">
+		<input
             type="text"
             pattern="\d*\.\d*"
-						value=""
-						placeholder="Longitude"
-						name="longitude"
-					/>
-					<label class="login-field-icon fui-lock" for="login-pass"></label>
-				</div>
-				<input
-					type="submit"
-					value="Sumbit"
-					class="btn btn-primary btn-large btn-block"
-					name="login"
-				/>
-			</div>
-		</div>
+			value=""
+			placeholder="Longitude"
+			name="longitude"
+			required
+		/>
 	</div>
+	<input
+		type="submit"
+		value="Submit"
+		name="submit"
+	/>
 </form>
 
 <div class="cards">
@@ -51,7 +41,7 @@
       />
       <div class="container">
         <h4><b>{{i[1]}}</b></h4>
-        <p class="card-text2">Adresse: <br> {{i[2]}}</p>
+        <p class="card-text2">Adresse: <br> <br> {{i[2]}}</p>
         <p class="card-text2">Rating: {{i[3]}}</p>
         <p class="card-text2">Tlf nr.: {{i[6]}}</p>
       </div>
