@@ -1,5 +1,6 @@
 {% extends "navbar.html" %}
 {% block content %}
+
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 <table class="sortable">
     <thead>
@@ -17,6 +18,7 @@
     <td><a href="/{{n[0]}}">{{n[1]}}</a></td>
     <td>{{n[2]}}</td>
     <td>{{n[3]}}</td>
+    <td>{{n[6]}}</td>
     </tr>
     {% endfor %}
      </tbody>

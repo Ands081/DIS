@@ -10,7 +10,6 @@ Set password in __init__.py
 
 run loaddb.sql
     psql -d kebab -U postgres -W -f src/loaddb.sql
-    psql -d kebab -U postgres -W -f src/loadreviews.sql
 
 Run Web-App
-    python src/app.py
+    python run.py

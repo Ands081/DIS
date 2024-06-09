@@ -3,20 +3,19 @@
 <h1>Haps haps kom og få en kabab</h1>
 
 <div class="cards">
-  {%for i in range(0,length)%}
-  <a href="/{{content[i][0]}}">
+  {%for i in content%}
+  <a href="/{{i[0]}}">
     <div class="card">
       <img
-        src="..\static\images\{{content[i][0]}}.png"
+        src="..\static\images\{{i[0]}}.png"
         alt="Avatar"
         class="image"
       />
       <div class="container">
-        <h4><b>{{content[i][1]}}</b></h4>
-        <p class="card-text2">Adresse: <br> {{content[i][2]}}</p>
-        <p class="card-text2">Rating: {{content[i][3]}}</p>
-        <p class="card-text2">Tlf Nr.: {{content[i][4]}}</p>
-
+        <h4><b>{{i[1]}}</b></h4>
+        <p class="card-text2">Adresse: <br> {{i[2]}}</p>
+        <p class="card-text2">Rating: {{i[3]}}</p>
+        <p class="card-text2">Tlf nr.: {{i[6]}}</p>
       </div>
     </div>
   </a>
