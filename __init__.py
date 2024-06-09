@@ -17,10 +17,13 @@ app = Flask(__name__)
 db = "dbname='kebab' user='postgres' host='localhost' password = '123'"
 conn = psycopg2.connect(db)
 
-def tlftransform(tlfnr):
-    pattern = re.compile(r'\[(\d{2})(\d{2})(\d{2})(\d{2})\]')
-    transformed = re.sub(pattern, r'[\1 \2 \3 \4]', tlfnr)
-    return transformed
+def distformat(distance):
+    # Regular expression to match numbers with more than 2 decimal places
+    pattern = re.compile(r'\d+.\d{3,}')
+
+    # Replace matched numbers with numbers rounded to 2 decimal places and add 'km'
+    distformat = re.sub(pattern, lambda x: f'{float(x.group()):.2f} km', distance)
+    return distformat
 
 @app.route('/', methods = ['GET','POST'])
 def home():
@@ -34,12 +37,12 @@ def home():
         lon1 = float(request.form['longitude'])
         cur.execute(f'''SELECT x_coordinate, y_coordinate FROM kebabshop''')
         temp = cur.fetchall()
-        for i in range(1, 50):
+        for i in range(1, 51):
             lat2 = temp[i-1][0]
             lon2 = temp[i-1][1]
             c1 = (lat1, lon1)
             c2 = (lat2, lon2)
-            tempdist = str(geopy.distance.distance(c1, c2).km)
+            tempdist = distformat(str(geopy.distance.distance(c1, c2).km))
             cur.execute(f'''INSERT INTO distance (kid, dist) VALUES ('{i}', '{tempdist}') 
                             ON CONFLICT (kid) DO UPDATE SET dist ='{tempdist}' ''') 
             conn.commit()
@@ -52,7 +55,7 @@ def contact():
 @app.route("/shoplist")
 def shoplist():
     cur = conn.cursor()
-    allks = '''select * from kebabshop NATURAL JOIN distance'''
+    allks = '''select * from kebabshop FULL JOIN distance ON kebabshop.kid = distance.kid'''
     cur.execute(allks)
     kebab = list(cur.fetchall())
     return render_template("shoplist.html", content = kebab)
