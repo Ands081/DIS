@@ -1,5 +1,5 @@
 {% extends "navbar.html" %} {% block content %}
-
+<!DOCTYPE html>
 <h1>Haps haps kom og få en kabab</h1>
 
 <form action="/" method="POST">
@@ -13,6 +13,7 @@
 						type="text"
 						class="login-field"
 						value=""
+            pattern="\d*\.\d*"
 						placeholder="Latitude"
 						name="latitude"
 					/>
@@ -20,8 +21,8 @@
 				</div>
 				<div class="control-group">
 					<input
-						type="text"
-						class="login-field"
+            type="text"
+            pattern="\d*\.\d*"
 						value=""
 						placeholder="Longitude"
 						name="longitude"
