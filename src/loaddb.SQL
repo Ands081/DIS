@@ -17,15 +17,6 @@ CREATE TABLE IF NOT EXISTS distance(
 kid integer PRIMARY KEY,
 dist text);
 
-copy kebabshop(kid, name, address, rating, x_coordinate, y_coordinate, tlfnr)
-            from 'C:\Users\Peter\Desktop\Durum\src\database\kebabshop.csv'
-            delimiter ','
-            CSV HEADER
-            ENCODING 'UTF8';
+\copy kebabshop(kid, name, address, rating, x_coordinate, y_coordinate, tlfnr) from 'src\database\kebabshop.csv' delimiter ',' CSV HEADER ENCODING 'UTF8'
 
-copy reviews(rid, kid, rating, review)
-            from 'C:\Users\Peter\Desktop\Durum\src\database\reviews.csv'
-            delimiter ','
-            CSV HEADER
-            ENCODING 'UTF8';
-
+\copy reviews(rid, kid, rating, review) from 'src\database\reviews.csv' delimiter ',' CSV HEADER ENCODING 'UTF8'
