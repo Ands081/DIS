@@ -1,7 +1,11 @@
 {% extends "navbar.html" %} {% block content %}
+
 <!DOCTYPE html>
 <h1>Ten random Kebabshops</h1>
 
+<h2> Fill in your latitude and longitude</h2>
+<h2> Can be found on google maps</h2>
+<h2> DIKU is at 55.70209, 12.56105</h2>
 <form action="/" method="POST">
 	<div class="control-group">
 		<input
@@ -12,7 +16,7 @@
 			name="latitude"
 			required
 		/>
-	</div>
+	</div> 
 	<div class="control-group">
 		<input
             type="text"
