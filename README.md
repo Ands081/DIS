@@ -13,3 +13,9 @@ Initialize loaddb.sql
 
 Run Web-App
     python run.py
+
+Enter a real latitude and longitude to get the distance all the kebabshops.
+
+Bugs:
+Sometimes the site crashes to a sql error on the first use at startup.
+We saved the __init__.py to restart the web app.
