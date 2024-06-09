@@ -8,7 +8,7 @@ For windows do before database loading
 
 Set dbname, user and password in __init__.py
 
-Run loaddb.sql to load in db
+Initialize loaddb.sql
     psql -d kebab -U postgres -W -f src/loaddb.sql
 
 Run Web-App
