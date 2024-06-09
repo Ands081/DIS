@@ -15,7 +15,7 @@ review text);
 
 CREATE TABLE IF NOT EXISTS distance(
 kid integer PRIMARY KEY,
-dist real);
+dist text);
 
 copy kebabshop(kid, name, address, rating, x_coordinate, y_coordinate, tlfnr)
             from 'C:\Users\Peter\Desktop\Durum\src\database\kebabshop.csv'

@@ -39,7 +39,7 @@ def home():
             lon2 = temp[i-1][1]
             c1 = (lat1, lon1)
             c2 = (lat2, lon2)
-            tempdist = geopy.distance.distance(c1, c2).km
+            tempdist = str(geopy.distance.distance(c1, c2).km)
             cur.execute(f'''INSERT INTO distance (kid, dist) VALUES ('{i}', '{tempdist}') 
                             ON CONFLICT (kid) DO UPDATE SET dist ='{tempdist}' ''') 
             conn.commit()
