@@ -1,4 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, session, abort, request, flash
+from math import sin, cos, sqrt, atan2, radians
+import geopy.distance
 import requests
 from bs4 import BeautifulSoup
 import psycopg2
@@ -20,8 +22,6 @@ def tlftransform(tlfnr):
     transformed = re.sub(pattern, r'[\1 \2 \3 \4]', tlfnr)
     return transformed
 
-
-
 @app.route('/', methods = ['GET','POST'])
 def home():
     cur = conn.cursor()
@@ -29,7 +29,20 @@ def home():
     rand_ten = '''select * from kebabshop order by random() limit 10;'''
     cur.execute(rand_ten)
     kebab = list(cur.fetchall())
-
+    if request.method == 'POST':
+        lat1 = float(request.form['latitude'])
+        lon1 = float(request.form['longitude'])
+        cur.execute(f'''SELECT x_coordinate, y_coordinate FROM kebabshop''')
+        temp = cur.fetchall()
+        for i in range(1, 50):
+            lat2 = temp[i-1][0]
+            lon2 = temp[i-1][1]
+            c1 = (lat1, lon1)
+            c2 = (lat2, lon2)
+            tempdist = geopy.distance.distance(c1, c2).km
+            cur.execute(f'''INSERT INTO distance (kid, dist) VALUES ('{i}', '{tempdist}') 
+                            ON CONFLICT (kid) DO UPDATE SET dist ='{tempdist}' ''') 
+            conn.commit()
     return render_template("index.html", content = kebab)
 
 @app.route("/contact")
@@ -39,7 +52,7 @@ def contact():
 @app.route("/shoplist")
 def shoplist():
     cur = conn.cursor()
-    allks = '''select * from kebabshop'''
+    allks = '''select * from kebabshop NATURAL JOIN distance'''
     cur.execute(allks)
     kebab = list(cur.fetchall())
     return render_template("shoplist.html", content = kebab)

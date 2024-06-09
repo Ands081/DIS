@@ -3,8 +3,8 @@ kid integer PRIMARY KEY,
 name varchar(100),
 address text,
 rating float(2),
-x_coordinate float(7),
-y_coordinate float(7),
+x_coordinate real,
+y_coordinate real,
 tlfnr text);
 
 CREATE TABLE IF NOT EXISTS reviews(
@@ -14,9 +14,8 @@ rating float(2),
 review text);
 
 CREATE TABLE IF NOT EXISTS distance(
-did integer PRIMARY KEY,
-dist integer,
-kid integer);
+kid integer PRIMARY KEY,
+dist real);
 
 copy kebabshop(kid, name, address, rating, x_coordinate, y_coordinate, tlfnr)
             from 'C:\Users\Peter\Desktop\Durum\src\database\kebabshop.csv'
